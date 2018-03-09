@@ -1,5 +1,5 @@
 {
-    "name": "1610BJJ",
+    "name": "1610bjj",
     "version": "1.0.0",
     "description": "",
     "main": "index.html",
@@ -19,7 +19,8 @@
     "dependencies": {
         "bootstrap": "^3.3.7",
         "jquery": "^3.2.1",
-        "webpack": "^4.1.1"
+        "webpack": "^4.1.1",
+        "webpack-cli": "^2.0.10"
     },
     "jshintConfig": {
         "expr": true,
