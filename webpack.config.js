@@ -5,18 +5,11 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const $ = require('jquery');
 const webpack = require('webpack');
 const ManifestPlugin = require('webpack-manifest-plugin');
-const IP = '172.16.0.104';
-//const IP = '127.0.0.1';
-const PORT = 5500;
 
 module.exports = {
     context: __dirname,
     entry: {
-        main: './src/index.js',
-        catalog: './src/catView.js',
-        contact: './src/contactView.js',
-        adds: './src/addView.js'
-            //fpView: './src/fullpartView.js'
+        main: './assets/index.js'
     },
     devtool: 'inline-source-map',
     module: {
