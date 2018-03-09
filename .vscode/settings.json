@@ -1,3 +1,16 @@
 {
-    "html.autoClosingTags": true
+    "html.autoClosingTags": true,
+    "jshint.packageManager": "npm",
+    "npm-intellisense.importES6": true,
+    "jshint.enable": true,
+    "jshint.lintHTML": true,
+    "prettier.eslintIntegration": true,
+    "eslint.autoFixOnSave": true,
+    "eslint.enable": true,
+    "eslint.packageManager": "npm",
+    "eslint.trace.server": "verbose",
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact"
+    ]
 }

@@ -1,23 +1,28 @@
 {
-  "name": "vatsure-webclient",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
-  "scripts": {
-    "test": "start"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CQSGRC/VATSure.git"
-  },
-  "author": "Jason Lunderstedt",
-  "license": "ISC",
-  "devDependencies": {
-    "eslint": "^4.15.0"
-  },
-  "dependencies": {
-    "bootstrap": "^3.3.7",
-    "jquery": "^3.2.1",
-    "webpack": "^4.1.1"
-  }
+    "name": "1610BJJ",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.html",
+    "scripts": {
+        "test": "start",
+        "build": "webpack"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CliffCrerar/1610-BJJ.git"
+    },
+    "author": "Jason Lunderstedt",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^4.15.0"
+    },
+    "dependencies": {
+        "bootstrap": "^3.3.7",
+        "jquery": "^3.2.1",
+        "webpack": "^4.1.1"
+    },
+    "jshintConfig": {
+        "expr": true,
+        "esversion": 6
+    }
 }
