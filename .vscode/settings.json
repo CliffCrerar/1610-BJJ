@@ -12,5 +12,6 @@
     "eslint.validate": [
         "javascript",
         "javascriptreact"
-    ]
+    ],
+    "liveServer.settings.root": "/dist"
 }

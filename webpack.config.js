@@ -53,7 +53,16 @@ module.exports = {
                 }],
             },
             { test: /\.handlebars$/, loader: "handlebars-loader" },
-            { test: /\.txt$/, use: 'raw-loader' }
+            { test: /\.txt$/, use: 'raw-loader' },
+            {
+                test: /\.(png|jpeg|jpg|gif)$/,
+                use: [{
+                    loader: 'url-loader',
+                    options: {
+                        limit: 8192
+                    }
+                }]
+            }
         ],
 
     },
@@ -66,7 +75,8 @@ module.exports = {
         }),
 
         new HTMLWebpackPlugin({
-            //template: './src/html/index.html',
+            title: "1610 BJJ",
+            favicon: "./assets/img/logo_NZC_icon.ico"
         }),
         new CleanWebpackPlugin(['dist']),
         new ManifestPlugin(),

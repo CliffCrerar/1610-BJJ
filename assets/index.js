@@ -15,6 +15,38 @@ import './vendors/magnific-popup/magnific-popup.min.css';
 import './vendors/swiper/swiper.css';
 /*<!-- App & fonts-->*/
 /*<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Permanent+Marker|Cinzel|Righteous">*/
-import 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Permanent+Marker|Cinzel|Righteous';
+import './css/font.css';
 /*<link rel="stylesheet" type="text/css" href="assets/css/main.css">*/
 import './css/main.css';
+//<!-- Vendors-->
+//<script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
+import './vendors/jquery/jquery.min.js';
+//<script type="text/javascript" src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+import './vendors/imagesloaded/imagesloaded.pkgd.js';
+//<script type="text/javascript" src="assets/vendors/isotope-layout/isotope.pkgd.js"></script>
+import './vendors/isotope-layout/isotope.pkgd.js';
+//<script type="text/javascript" src="assets/vendors/jquery-one-page/jquery.nav.min.js"></script>
+import './vendors/jquery-one-page/jquery.nav.min.js';
+//<script type="text/javascript" src="assets/vendors/jquery.easing/jquery.easing.min.js"></script>
+import './vendors/jquery.easing/jquery.easing.min.js';
+//<script type="text/javascript" src="assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+import './vendors/jquery.matchHeight/jquery.matchHeight.min.js';
+//<script type="text/javascript" src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+import './vendors/magnific-popup/jquery.magnific-popup.min.js';
+//<script type="text/javascript" src="assets/vendors/masonry-layout/masonry.pkgd.js"></script>
+import './vendors/masonry-layout/masonry.pkgd.js';
+//<script type="text/javascript" src="assets/vendors/swiper/swiper.jquery.js"></script>
+import './vendors/swiper/swiper.jquery.js';
+//<sc/ript type="text/javascript" src="assets/vendors/menu/menu.js"></script>
+import './vendors/menu/menu.js';
+//<script type="text/javascript" src="assets/vendors/typed/typed.min.js"></script>
+import './vendors/typed/typed.min.js';
+//<!-- App-->
+//<script type="text/javascript" src="assets/js/main.js"></script>
+import './js/main.js';
+
+import htmlHead from './html/head.html';
+import htmlBody from './html/body.html';
+
+$('head').append(htmlHead);
+$('body').append(htmlBody);
