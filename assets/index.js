@@ -48,5 +48,27 @@ import './js/main.js';
 import htmlHead from './html/head.html';
 import htmlBody from './html/body.html';
 
+/* IMPORT IMAGES */
+import navLogo from './img/logo.png';
+import img1 from './img/blog/1.jpg';
+import img2 from './img/blog/2.jpg';
+import img3 from './img/blog/3.jpg';
+
+// ./assets/img/kimuraweb.jpeg
+// ./assets/img/portfolio/1.jpg
+// ./assets/img/portfolio/2.jpg
+// ./assets/img/portfolio/3.jpg
+// ./assets/img/portfolio/4.jpg
+// ./assets/img/portfolio/5.jpg
+// ./assets/img/portfolio/6.jpg
+// ./assets/img/portfolio/7.jpg
+// ./assets/img/portfolio/8.jpg
+// ./assets/img/portfolio/9.jpg
+
 $('head').append(htmlHead);
 $('body').append(htmlBody);
+/* WEB PACK IMAGES */
+$('#navLogo').attr('src', navLogo);
+$('#img1').attr('src', img1);
+$('#img2').atte('src', img2);
+$('#img3').atte('src', img3);
