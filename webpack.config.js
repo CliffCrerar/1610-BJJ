@@ -7,7 +7,6 @@ const webpack = require('webpack');
 const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
-    context: __dirname,
     entry: {
         main: './assets/index.js'
     },

@@ -5,7 +5,9 @@
     "main": "index.html",
     "scripts": {
         "test": "start",
-        "build": "webpack"
+        "build": "webpack --config webpack.config.js --display-modules --mode development",
+        "builda": "npx webpack --config webpack.config.js --display-modules",
+        "start": "webpack --watch --mode development"
     },
     "repository": {
         "type": "git",
