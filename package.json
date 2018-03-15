@@ -1,7 +1,7 @@
 {
     "name": "1610bjj",
     "version": "1.0.0",
-    "description": "Website for JuJitsu gym 1610BJJ",
+    "description": "Website for Jiu Jitsu gym 1610BJJ",
     "main": "index.html",
     "scripts": {
         "test": "start",
