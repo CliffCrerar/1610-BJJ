@@ -5,11 +5,43 @@ const $ = require('jquery');
 const jquery = require('jquery');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: {
+        '1': './src/style.js',
+        //<script type="text/javascript" src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+        a: './src/assets/vendors/imagesloaded/imagesloaded.pkgd.js',
+        //<script type="text/javascript" src="assets/vendors/isotope-layout/isotope.pkgd.js"></script>
+        b: './src/assets/vendors/isotope-layout/isotope.pkgd.js',
+        //<script type="text/javascript" src="assets/vendors/jquery-one-page/jquery.nav.min.js"></script>
+        c: './src/assets/vendors/jquery-one-page/jquery.nav.min.js',
+        //<script type="text/javascript" src="assets/vendors/jquery.easing/jquery.easing.min.js"></script>
+        e: './src/assets/vendors/jquery.easing/jquery.easing.min.js',
+        //<script type="text/javascript" src="assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+        f: './src/assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js',
+        //<script type="text/javascript" src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+        g: './src/assets/vendors/magnific-popup/jquery.magnific-popup.min.js',
+        //<script type="text/javascript" src="assets/vendors/masonry-layout/masonry.pkgd.js"></script>
+        h: './src/assets/vendors/masonry-layout/masonry.pkgd.js',
+        //<script type="text/javascript" src="assets/vendors/swiper/swiper.jquery.js"></script>
+        i: './src/assets/vendors/swiper/swiper.jquery.js',
+        //<script type="text/javascript" src="assets/vendors/menu/menu.js"></script>
+        j: './src/assets/vendors/menu/menu.js',
+        //<script type="text/javascript" src="assets/vendors/typed/typed.min.js"></script>
+        k: './src/assets/vendors/typed/typed.min.js',
+        //<script type="text/javascript" src="assets/js/main.js"></script>
+    },
+
     devtool: 'inline-source-map',
     output: {
-        filename: 'bundle.js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist')
+    },
+    module: {
+        rules: [
+            { test: /\.css$/, use: ['style-loader', 'css-loader'] },
+            { test: /\.(png|svg|jpg|gif)$/, use: ['file-loader'] },
+            { test: /\.(woff|woff2|eot|ttf|otf)$/, use: ['file-loader'] },
+            { test: /\.exec\.js$/, use: ['script-loader'] }
+        ],
     },
     plugins: [
         new HTMLWebPackPlugin({

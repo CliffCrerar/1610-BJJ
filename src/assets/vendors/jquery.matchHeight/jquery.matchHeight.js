@@ -1,10 +1,10 @@
 /**
-* jquery-match-height master by @liabru
-* http://brm.io/jquery-match-height/
-* License: MIT
-*/
+ * jquery-match-height master by @liabru
+ * http://brm.io/jquery-match-height/
+ * License: MIT
+ */
 
-;(function(factory) { // eslint-disable-line no-extra-semi
+(function(factory) { // eslint-disable-line no-extra-semi
     'use strict';
     if (typeof define === 'function' && define.amd) {
         // AMD
@@ -18,16 +18,16 @@
     }
 })(function($) {
     /*
-    *  internal
-    */
+     *  internal
+     */
 
     var _previousResizeWidth = -1,
         _updateTimeout = -1;
 
     /*
-    *  _parse
-    *  value parse utility function
-    */
+     *  _parse
+     *  value parse utility function
+     */
 
     var _parse = function(value) {
         // parse value and convert NaN to 0
@@ -35,10 +35,10 @@
     };
 
     /*
-    *  _rows
-    *  utility function returns array of jQuery selections representing each row
-    *  (as displayed after float wrapping applied by browser)
-    */
+     *  _rows
+     *  utility function returns array of jQuery selections representing each row
+     *  (as displayed after float wrapping applied by browser)
+     */
 
     var _rows = function(elements) {
         var tolerance = 1,
@@ -47,7 +47,7 @@
             rows = [];
 
         // group elements by their top position
-        $elements.each(function(){
+        $elements.each(function() {
             var $that = $(this),
                 top = $that.offset().top - _parse($that.css('margin-top')),
                 lastRow = rows.length > 0 ? rows[rows.length - 1] : null;
@@ -73,9 +73,9 @@
     };
 
     /*
-    *  _parseOptions
-    *  handle plugin options
-    */
+     *  _parseOptions
+     *  handle plugin options
+     */
 
     var _parseOptions = function(options) {
         var opts = {
@@ -99,9 +99,9 @@
     };
 
     /*
-    *  matchHeight
-    *  plugin definition
-    */
+     *  matchHeight
+     *  plugin definition
+     */
 
     var matchHeight = $.fn.matchHeight = function(options) {
         var opts = _parseOptions(options);
@@ -140,8 +140,8 @@
     };
 
     /*
-    *  plugin global options
-    */
+     *  plugin global options
+     */
 
     matchHeight.version = 'master';
     matchHeight._groups = [];
@@ -154,9 +154,9 @@
     matchHeight._parseOptions = _parseOptions;
 
     /*
-    *  matchHeight._apply
-    *  apply matchHeight to given elements
-    */
+     *  matchHeight._apply
+     *  apply matchHeight to given elements
+     */
 
     matchHeight._apply = function(elements, options) {
         var opts = _parseOptions(options),
@@ -230,7 +230,7 @@
                 }
 
                 // iterate the row and find the max height
-                $row.each(function(){
+                $row.each(function() {
                     var $that = $(this),
                         style = $that.attr('style'),
                         display = $that.css('display');
@@ -263,7 +263,7 @@
             }
 
             // iterate the row and apply the height to all elements
-            $row.each(function(){
+            $row.each(function() {
                 var $that = $(this),
                     verticalPadding = 0;
 
@@ -298,9 +298,9 @@
     };
 
     /*
-    *  matchHeight._applyDataApi
-    *  applies matchHeight to all elements with a data-match-height attribute
-    */
+     *  matchHeight._applyDataApi
+     *  applies matchHeight to all elements with a data-match-height attribute
+     */
 
     matchHeight._applyDataApi = function() {
         var groups = {};
@@ -324,9 +324,9 @@
     };
 
     /*
-    *  matchHeight._update
-    *  updates matchHeight on all current groups with their correct options
-    */
+     *  matchHeight._update
+     *  updates matchHeight on all current groups with their correct options
+     */
 
     var _update = function(event) {
         if (matchHeight._beforeUpdate) {
@@ -366,8 +366,8 @@
     };
 
     /*
-    *  bind events
-    */
+     *  bind events
+     */
 
     // apply on DOM ready event
     $(matchHeight._applyDataApi);
