@@ -13,9 +13,9 @@
         "javascript",
         "javascriptreact"
     ],
-    //"liveServer.settings.root": "/dist",
+    "liveServer.settings.root": "/dist",
     //"liveServer.settings.root": "/src",
     "liveServer.settings.host": "127.0.0.1",
-    "liveServer.settings.CustomBrowser": "firefox",
+    "liveServer.settings.CustomBrowser": "chrome",
     "git.ignoreLimitWarning": true
 }
