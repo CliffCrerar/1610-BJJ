@@ -1,22 +1,32 @@
 {
-  "name": "vatsure-webclient",
+  "name": "1610-bjj",
   "version": "1.0.0",
-  "description": "",
+  "description": "Web site for Jiu Jitsu gym 1610-BJJ",
   "main": "index.html",
   "scripts": {
     "test": "start"
   },
-  "repository":{
-	"type":"git",
-	"url":"git+https://github.com/CQSGRC/VATSure.git"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CliffCrerar/1610-BJJ.git"
   },
   "author": "Jason Lunderstedt",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^4.15.0"
   },
-  "dependencies": {
-    "bootstrap": "^3.3.7",
-    "jquery": "^3.2.1"
-  }
+  "dependencies": {},
+  "jshintConfig": {
+    "expr": true,
+    "esversion": 6
+  },
+  "bugs": {
+    "url": "https://github.com/CliffCrerar/1610-BJJ/issues"
+  },
+  "homepage": "https://github.com/CliffCrerar/1610-BJJ#readme",
+  "keywords": [
+    "Jiu",
+    "Jitsu",
+    "1610-BJJ"
+  ]
 }
