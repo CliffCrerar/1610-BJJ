@@ -1,33 +1,41 @@
 {
-  "name": "1610-bjj",
-  "version": "1.0.0",
-  "description": "Web site for Jiu Jitsu gym 1610-BJJ",
-  "main": "index.html",
-  "scripts": {
-    "test": "start"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CliffCrerar/1610-BJJ.git"
-  },
-  "author": "Jason Lunderstedt",
-  "license": "ISC",
-  "devDependencies": {
-    "eslint": "^4.15.0",
-    "webpack": "^4.1.1"
-  },
-  "dependencies": {},
-  "jshintConfig": {
-    "expr": true,
-    "esversion": 6
-  },
-  "bugs": {
-    "url": "https://github.com/CliffCrerar/1610-BJJ/issues"
-  },
-  "homepage": "https://github.com/CliffCrerar/1610-BJJ#readme",
-  "keywords": [
-    "Jiu",
-    "Jitsu",
-    "1610-BJJ"
-  ]
+    "name": "1610-bjj",
+    "version": "1.0.0",
+    "description": "Web site for Jiu Jitsu gym 1610-BJJ",
+    "main": "./src/index.js",
+    "scripts": {
+        "build": "webpack --config webpack.config.js --display-modules --mode development",
+        "test": "npx webpack --config webpack.config.js --display-modules --mode development",
+        "start": "webpack --watch --mode development"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CliffCrerar/1610-BJJ.git"
+    },
+    "author": "Jason Lunderstedt",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^4.15.0",
+        "html-webpack-plugin": "^3.0.6",
+        "webpack": "^4.1.1",
+        "webpack-cli": "^2.0.12"
+    },
+    "dependencies": {
+        "jquery": "^3.3.1",
+        "lodash": "^4.17.5",
+        "node": "^9.8.0"
+    },
+    "jshintConfig": {
+        "expr": true,
+        "esversion": 6
+    },
+    "bugs": {
+        "url": "https://github.com/CliffCrerar/1610-BJJ/issues"
+    },
+    "homepage": "https://github.com/CliffCrerar/1610-BJJ#readme",
+    "keywords": [
+        "Jiu",
+        "Jitsu",
+        "1610-BJJ"
+    ]
 }
