@@ -1,53 +1,25 @@
 {
-    "name": "1610-bjj",
-    "version": "1.0.0",
-    "description": "Web site for Jiu Jitsu gym 1610-BJJ",
-    "main": "./src/index.js",
-    "scripts": {
-        "build": "webpack --config webpack.config.js --display-modules --mode development",
-        "test": "npx webpack --config webpack.config.js --display-modules --mode development",
-        "start": "webpack --watch --mode development"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/CliffCrerar/1610-BJJ.git"
-    },
-    "author": "Jason Lunderstedt",
-    "license": "ISC",
-    "devDependencies": {
-        "clean-webpack-plugin": "^0.1.19",
-        "cross-env": "^5.1.4",
-        "css-loader": "^0.28.11",
-        "eslint": "^4.19.0",
-        "file-loader": "^1.1.11",
-        "html-loader": "^0.5.5",
-        "html-webpack-plugin": "^3.0.6",
-        "script-loader": "^0.7.2",
-        "style-loader": "^0.20.3",
-        "url-loader": "^1.0.1",
-        "webpack": "^4.1.1",
-        "webpack-cli": "^2.0.12",
-        "webpack-manifest-plugin": "^2.0.0-rc.2"
-    },
-    "dependencies": {
-        "babel-preset-env": "^1.6.1",
-        "jquery": "^3.3.1",
-        "lodash": "^4.17.5",
-        "node": "^9.8.0",
-        "npm": "^5.7.1",
-        "update": "^0.7.4"
-    },
-    "jshintConfig": {
-        "expr": true,
-        "esversion": 6
-    },
-    "bugs": {
-        "url": "https://github.com/CliffCrerar/1610-BJJ/issues"
-    },
-    "homepage": "https://github.com/CliffCrerar/1610-BJJ#readme",
-    "keywords": [
-        "Jiu",
-        "Jitsu",
-        "1610-BJJ"
-    ]
+  "name": "1610-bjj",
+  "version": "1.0.0",
+  "description": "'1610-BJJ information page'",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CliffCrerar/1610-BJJ.git"
+  },
+  "keywords": [
+    "jiujitsu"
+  ],
+  "author": "Jason Lunderstedt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CliffCrerar/1610-BJJ/issues"
+  },
+  "homepage": "https://github.com/CliffCrerar/1610-BJJ#readme",
+  "devDependencies": {
+    "eslint": "^4.19.0"
+  }
 }
