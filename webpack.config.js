@@ -3,6 +3,8 @@ const HTMLWebPackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const $ = require('jquery');
 const jquery = require('jquery');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
     entry: {
@@ -38,14 +40,18 @@ module.exports = {
     module: {
         rules: [
             { test: /\.css$/, use: ['style-loader', 'css-loader'] },
-            { test: /\.(png|svg|jpg|gif)$/, use: ['file-loader'] },
+            { test: /\.(png|svg|jpg|gif|jpeg)$/, use: ['file-loader'] },
             { test: /\.(woff|woff2|eot|ttf|otf)$/, use: ['file-loader'] },
             { test: /\.exec\.js$/, use: ['script-loader'] },
-            { test: /\.(png|jpg|gif)$/, use: [{ loader: 'url-loader', options: { limit: 8192 } }] }
+            { test: /\.(png|jpg|gif)$/, use: [{ loader: 'url-loader', options: { limit: 8192 } }] },
+            { test: /\.(html)$/, use: { loader: 'html-loader', options: { attrs: [':data-src'] } } }
         ],
     },
     plugins: [
+        new CleanWebpackPlugin(['dist']),
         new HTMLWebPackPlugin({
+            title: '1610-BJJ',
+            favicon: './src/assets/img/logo_NZC_icon.ico',
             template: './src/index.html'
         }),
         new webpack.ProvidePlugin({
