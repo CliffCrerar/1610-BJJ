@@ -16,6 +16,7 @@
     "liveServer.settings.root": "/",
     //"liveServer.settings.root": "/src",
     "liveServer.settings.host": "127.0.0.1",
-    "liveServer.settings.CustomBrowser": "chrome",
-    "git.ignoreLimitWarning": true
+    "liveServer.settings.CustomBrowser": "firefox",
+    "git.ignoreLimitWarning": true,
+    "liveServer.settings.fullReload": true
 }

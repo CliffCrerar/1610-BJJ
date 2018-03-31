@@ -1,0 +1,15 @@
+/* CUSTOM 1 ADDED */
+#kimuraDiv {
+  display: block !important;
+  padding: auto !important;
+}
+@media screen and (max-width: 414px) {
+  #kimura {
+    width: 100% !important;
+  }
+  #sTable {
+    overflow-x: scroll;
+  }
+}
+
+/* /CUSTOM 1 ADDED */
