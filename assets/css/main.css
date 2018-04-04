@@ -2359,6 +2359,7 @@ ul {
   font-weight: bold;
   text-transform: uppercase;
   color: rgb(160, 8, 8);
+  text-shadow: 1px 1px white;
   margin-top: 0;
   margin-bottom: 25px;
 }
@@ -2378,6 +2379,7 @@ ul {
 .hero__title .typing__module {
   display: inline-block;
   color: black;
+  text-shadow: 1px 1px white;
   font-size: 42px;
   font-family: 'Permanent Marker', cursive;
 }
