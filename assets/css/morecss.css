@@ -1,15 +1,57 @@
 /* CUSTOM 1 ADDED */
+
 #kimuraDiv {
-  display: block !important;
-  padding: auto !important;
+    display: block !important;
+    padding: auto !important;
 }
+
 @media screen and (max-width: 414px) {
-  #kimura {
-    width: 100% !important;
-  }
-  #sTable {
-    overflow-x: scroll;
-  }
+    #kimura {
+        width: 100% !important;
+    }
+    #sTable {
+        overflow-x: scroll;
+    }
 }
+
+
+/* OPTION 2 */
+
+.loader {
+    position: fixed;
+    z-index: 1500;
+    height: 100%;
+    width: 100%;
+    background-color: white
+}
+
+.loaderGif {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+
+/* OPTION 2 
+
+.loader {
+    position: fixed;
+    z-index: 1500;
+    height: 100%;
+    width: 100%;
+    background-color: #971a1e
+}
+
+.loaderGif {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 24px;
+}
+
+*/
+
 
 /* /CUSTOM 1 ADDED */
