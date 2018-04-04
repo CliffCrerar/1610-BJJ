@@ -34,7 +34,7 @@ if (screen.width <= 414) {
 var pattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 $('#send').on('click', function() {
-    console.log('click send');
+    //:console.log('click send');
     var msg ={
         name:$('#name').val(),
         email: $('#email').val(),
