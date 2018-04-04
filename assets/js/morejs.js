@@ -31,3 +31,17 @@ if (screen.width <= 414) {
     $('.hero__text').css('width', screen.width);
     $('.hero__title').css('height', screen.height / 4);
 }
+
+// SUBMIT EMAIL FORM
+
+$('#send').on('click', function() {
+    console.log('click send')
+});
+
+// SEND DATA TO THE WEBMAIL SERVICE
+
+function sendMail() {
+    $.ajax({
+
+    });
+}
