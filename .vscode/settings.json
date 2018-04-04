@@ -18,5 +18,10 @@
     "liveServer.settings.host": "127.0.0.1",
     "liveServer.settings.CustomBrowser": "firefox",
     "git.ignoreLimitWarning": true,
-    "liveServer.settings.fullReload": true
+    "liveServer.settings.fullReload": true,
+    "html.format.enable": true,
+    "html.suggest.html5": true,
+    "html.trace.server": "messages",
+    "html.validate.scripts": true,
+    "html.validate.styles": true
 }

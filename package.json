@@ -19,7 +19,8 @@
     "url": "https://github.com/CliffCrerar/1610-BJJ/issues"
   },
   "homepage": "https://github.com/CliffCrerar/1610-BJJ#readme",
-  "devDependencies": {
+  "dependencies": {
     "eslint": "^4.19.0"
-  }
+  },
+  "devDependencies": {}
 }

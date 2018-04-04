@@ -12,6 +12,10 @@
     #sTable {
         overflow-x: scroll;
     }
+    .wolfBara{
+        width: 100% !important;
+        height: auto !important;
+    }
 }
 
 
