@@ -2,6 +2,18 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117291236-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-117291236-1');
+    </script>
     <title>1610 BJJ</title>
     <link rel="shortcut icon" href="./../assets/img/logo_NZC_icon.ico" />
     <meta charset="utf-8">
@@ -23,21 +35,11 @@
     <!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <![endif]-->
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117291236-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-117291236-1');
-</script>
 </head>
 
 <body>
     <script>
-        $('#loader').css('height',screen.height).css('width',screen.width);
+        $('#loader').css('height', screen.height).css('width', screen.width);
     </script>
     <div id="loader" class="loader">
         <img id="loaderGif" class="loaderGif" src="./assets/img/loading.gif">
