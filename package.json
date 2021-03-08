@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/CliffCrerar/1610-BJJ#readme",
   "dependencies": {
-    "eslint": "^6.0.0"
+    "eslint": "^6.1.0"
   },
   "devDependencies": {}
 }
